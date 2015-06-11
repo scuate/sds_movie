@@ -7,3 +7,6 @@
 ##### Resources used:
 1. https://evolution.voxeo.com/  Evolution: Voxeo’s Global Developer and Support Portal
 2. http://developer.rottentomatoes.com/  Rotten Tomatoes API (non-commercial use will expire in 6 months)
+
+##### Disclaimer:
+This is a collaborative work of me and Joe Mulvey. I was responsible for the two dynamic forms (i.e. dynamic_lst.php, dynamic_info.php)
