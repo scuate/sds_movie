@@ -1,4 +1,5 @@
 ### A spoken dialogue system for movie information retrieved from Rotten Tomatoes API
+--built in VoiceXML and PHP
 ##### This project contains three files: 
 1. MoviePhone.xml (contains universals and global variables) 
 2. dynamic_lst.php (holds a form asking for a movie name)

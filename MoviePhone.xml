@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vxml version="2.1" xmlns:voxeo="http://community.voxeo.com/xmlns/vxml">
+<property name="timeout" value="10s"/>
+<property name="incompletetimeout" value="20s"/>
+
+
+<var name="GlobalMovieName"/>
+<var name="GlobalMovieId" />
+<var name="GlobalMovieInfo" />
+<var name="m_list"/>
+<var name="id_list"/>
+ 
+<link next="dynamic_lst.php#GetMovieName">
+<!-- The XML grammar for the main menu. -->
+<grammar xml:lang="en-US" root ="LINKGRAM">
+   <rule id="LINKGRAM" scope="public">
+   <one-of>
+     <item>main</item>
+     <item>back</item>
+     <item>begin</item>
+   </one-of>
+   </rule>
+</grammar>
+</link>
+
+<noinput>
+    <prompt>
+     I did not hear anything. Please try again.
+    </prompt>
+    <reprompt/>
+   </noinput>
+ 
+<nomatch>
+    <prompt>
+     I did not recognize that option. Please try again.
+    </prompt>
+    <reprompt/>
+   </nomatch>
+   
+<form id="MainMenu">
+  <block>
+   <prompt bargein="false">
+    Welcome to the rotten tomatoes movie hotline.
+   </prompt>
+   <goto next="dynamic_lst.php#GetMovieName" />
+  </block>
+</form>
+</vxml>
